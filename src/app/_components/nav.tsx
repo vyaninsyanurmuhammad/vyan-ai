@@ -51,7 +51,7 @@ const Nav = ({ navigation }: NavProps) => {
     <nav className="fixed left-1/2 top-4 z-50 flex -translate-x-1/2 flex-row items-center gap-6">
       <Image
         src={"/assets/svg/logo.svg"}
-        className="!relative !h-10 !w-auto object-contain"
+        className="!relative hidden !h-10 !w-auto object-contain sm:block"
         sizes="100%"
         fill
         priority
