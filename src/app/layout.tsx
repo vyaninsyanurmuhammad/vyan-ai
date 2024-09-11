@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import GsapLayout from "./_components/gsap.layout";
+import LenisLayout from "./_components/lenis.layout";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -47,7 +48,9 @@ export default function RootLayout({
         )}
         suppressHydrationWarning
       >
-        <GsapLayout>{children}</GsapLayout>
+        <GsapLayout>
+          <LenisLayout>{children}</LenisLayout>
+        </GsapLayout>
       </body>
     </html>
   );

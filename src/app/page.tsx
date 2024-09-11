@@ -1,7 +1,6 @@
 import TitleHero from "./_components/title.hero";
 import DescriptionHero from "./_components/description.hero";
 import ButtonContactHero from "./_components/button-contact.hero";
-import LenisLayout from "./_components/lenis.layout";
 import ParallaxGsapLayout from "./_components/parallax.gsap.layout";
 import { ArrowUpRight } from "lucide-react";
 import ButtonServiceService from "./_components/button-service.service";
@@ -100,7 +99,6 @@ const socialmedia = [
 
 export default function Home() {
   return (
-    <LenisLayout>
       <main className="min-h-svh w-full">
         <Nav navigation={navigation} />
         <div className="fixed top-0 -z-50 flex min-h-svh w-full place-items-center">
@@ -308,6 +306,5 @@ export default function Home() {
           <div className="h-px w-full bg-gray-700/20"></div>
         </footer>
       </main>
-    </LenisLayout>
   );
 }
